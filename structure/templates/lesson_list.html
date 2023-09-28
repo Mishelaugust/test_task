@@ -1,0 +1,21 @@
+<!-- lesson_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lesson List</title>
+</head>
+<body>
+    <h1>Lessons for Products</h1>
+    <ul>
+        {% for lesson in data %}
+        <li>
+            <h2>{{ lesson.title }}</h2>
+            <p>Video Link: {{ lesson.video_link }}</p>
+            <p>Duration: {{ lesson.duration_seconds }} seconds</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
